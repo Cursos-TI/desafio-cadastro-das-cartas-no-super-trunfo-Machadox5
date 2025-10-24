@@ -1,11 +1,7 @@
 /*Lógica geral do programa
-
 Ler os dados de duas cartas, com população do tipo unsigned long int.
-
 Calcular:
-
 Densidade populacional = População / Área
-
 PIB per capita = PIB / População
 
 Calcular o Super Poder:
@@ -16,13 +12,10 @@ SuperPoder = população + área + PIB + pontosTurísticos + PIBperCapita + (1 /
 
 
 
-
-
-
 #include <stdio.h>
 
 int main() {
-    // ===== Declaração das variáveis =====
+    // xxxxxx Declaração das variáveis xxxxxx
     char estado1, estado2;
     char codigo1[4], codigo2[4];
     char nomeCidade1[50], nomeCidade2[50];
@@ -30,7 +23,7 @@ int main() {
     float area1, area2, pib1, pib2;
     int pontosTuristicos1, pontosTuristicos2;
 
-    // ===== Leitura dos dados =====
+    // xxxxxx Leitura dos dados xxxxxx
     printf("Cadastro da Carta 1:\n");
     printf("Estado : ");
     scanf(" %c", &estado1);
@@ -63,7 +56,7 @@ int main() {
     printf("Número de pontos turísticos: ");
     scanf("%d", &pontosTuristicos2);
 
-    // ===== Cálculos =====
+    // xxxxxx Cálculos xxxxxx
     float densidade1 = (float) populacao1 / area1;
     float densidade2 = (float) populacao2 / area2;
 
@@ -73,7 +66,7 @@ int main() {
     float superPoder1 = (float) populacao1 + area1 + pib1 + pontosTuristicos1 + pibPerCapita1 + (1 / densidade1);
     float superPoder2 = (float) populacao2 + area2 + pib2 + pontosTuristicos2 + pibPerCapita2 + (1 / densidade2);
 
-    // ===== Exibição dos resultados =====
+    // xxxxxx Exibição dos resultados xxxxxx
     printf("\n===== Dados Calculados =====\n");
     printf("Carta 1 - %s:\n", nomeCidade1);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
@@ -85,8 +78,8 @@ int main() {
     printf("PIB per Capita: %.2f reais\n", pibPerCapita2);
     printf("Super Poder: %.2f\n\n", superPoder2);
 
-    // ===== Comparações =====
-    printf("===== Comparação de Cartas =====\n");
+    // xxxxxx Comparações xxxxxx
+    printf("xxxxxx Comparação de Cartas xxxxxx\n");
 
     printf("População: Carta 1 venceu (%d)\n", populacao1 > populacao2);
     printf("Área: Carta 1 venceu (%d)\n", area1 > area2);
